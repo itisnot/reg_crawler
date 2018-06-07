@@ -10,8 +10,6 @@ while 1:
     response=requests.get(url)
     print(response)
     str = response.text
-    #print(str)
-    #results=re.findall(maoyan_reg, str, re.S)
     results=re.findall(pingguo_reg,str,re.S)
     print(type(results))
     for result in results:
